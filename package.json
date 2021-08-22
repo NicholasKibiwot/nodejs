@@ -15,8 +15,11 @@
     "url": "https://github.com/nicscott254/nodejs/issues"
   },
   "homepage": "https://github.com/nicscott254/nodejs#readme",
-  "description": "",
+  "description": "nodejs",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
     "mongoose": "^5.13.7"
-  }
+  },
+  "devDependencies": {}
 }
