@@ -1,4 +1,5 @@
 const mongoose = require('mongoose')
+const {ObjectId} = mongoose.Schema.Types
 const postSchema =new mongoose.Schema(
 {
     title:{
@@ -10,9 +11,9 @@ const postSchema =new mongoose.Schema(
     default:"no photo"
     },
     postedBy:{
-        type:String,
+        type:ObjectId,
         ref:"User"
     }
 }
 )
-mongoose.model("post",postSchema)
+mongoose.model("Post",postSchema)
